@@ -19,52 +19,18 @@
             <img src="assets/logo-svg.svg" alt="">
         </div>
         <form action="" id="form-group" class="form-group">
-            <input type="text" id="addList" class="addList" value="Adicione uma tarefa..." />
+            <input type="text" id="addList" class="addList" placeholder="Adicione uma tarefa..." />
             <button type="submit" id="btnAdd" class="btnAdd"><img src="assets/add.svg" alt=""></button>
         </form>
 
         <div class="listItems">
-            <label for="List">
-                <button type="button" id="BoxCheck" class="BoxCheck"><img src="assets/checkbo.svg" alt=""></button>
-                <span id="ListItems" class="list"></span>
-                <button type="reset" id="btnRemove" class="btn">
-                    <img src="assets/add_circle.svg" alt="">
-                </button>
-            </label>
-            <label for="List">
-                <button type="button" id="BoxCheck" class="BoxCheck"><img src="assets/checkbo.svg" alt=""></button>
-                <span id="ListItems" class="list"></span>
-                <button type="reset" id="btnRemove" class="btn">
-                    <img src="assets/add_circle.svg" alt="">
-                </button>
-            </label>
-            <label for="List">
-                <button type="button" id="BoxCheck" class="BoxCheck"><img src="assets/checkbo.svg" alt=""></button>
-                <span id="ListItems" class="list"></span>
-                <button type="reset" id="btnRemove" class="btn">
-                    <img src="assets/add_circle.svg" alt="">
-                </button>
-            </label>
-            <label for="List">
-                <button type="button" id="BoxCheck" class="BoxCheck"><img src="assets/checkbo.svg" alt=""></button>
-                <span id="ListItems" class="list"></span>
-                <button type="reset" id="btnRemove" class="btn">
-                    <img src="assets/add_circle.svg" alt="">
-                </button>
-            </label>
-            <label for="List">
-                <button type="button" id="BoxCheck" class="BoxCheck"><img src="assets/checkbo.svg" alt=""></button>
-                <span id="ListItems" class="list"></span>
-                <button type="reset" id="btnRemove" class="btn">
-                    <img src="assets/add_circle.svg" alt="">
-                </button>
-            </label>
+            <ul id="taskList"></ul>
         </div>
 
-        <label for="" class="infoBox" id="infoBox">
-            <span>Total: <p></p></span>
-            <span>Marcados: <p></p></span>
-            <span>Restante: <p></p></span>
+        <div id="infoBox">
+            <span id="spanTotal">Total: </span>
+            <span id="spanMarc">Marcados: </span>
+            <span id="spanRest">Restante: </span>
         </label>
     </main>
 

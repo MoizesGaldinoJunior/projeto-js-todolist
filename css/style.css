@@ -21,136 +21,138 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #e5e5e5;
+        /* Cor de fundo adicional */
 }
 
 main {
     width: 80%;
-    height: 90%;
+    max-width: 800px;
+        height: 700px;
+        max-height: 90%;
     background-color: #f2f2f2;
     display: flex;
     flex-direction: column;
-    text-align: center;
     justify-content: space-around;
     align-items: center;
     border: 1px solid var(--color-title);
     border-radius: 30px;
+    padding: 20px;
 }
 
 .logo {
     display: flex;
-    text-align: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    margin: 0 auto;
-    width: 15%;
-    /* border: 1px solid red; */
+    margin-bottom: 20px;
+        width: 40%;
 }
 
 main h1 {
     color: var(--color-title);
+    font-size: 1.5rem;
 }
 
 form {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70%;
-    height: 50px;
-    /* border: 1px solid red; */
+    width: 100%;
+        margin-bottom: 20px;
+        color: var(--color-font);
 }
 
 .addList {
     width: 80%;
-    height: 60px;
+        height: 50px;
     border-radius: 10px;
     border: 1px solid var(--color-font);
     padding: 0.75rem;
-}
-
-.addList[value] {
-    color: var(--color-font);
-    font-weight: 500;
-
+    font-size: 1rem;
 }
 
 .btnAdd {
     background-color: var(--btn-add);
-    width: 60px;
-    height: 60px;
+    width: 50px;
+        height: 50px;
     border-radius: 10px;
     border: none;
-    margin: 0 10px;
+    margin-left: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .btnAdd:hover {
     background-color: #009696;
-    transition: all .15s ease-in;
-}
-
-label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .listItems {
-    width: 70%;
-    height: 320px;
+    width: 100%;
+    max-height: auto;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+        color: var(--color-font-second);
+        /* Espaço entre itens */
+}
+
+.listItems ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+.listItems li {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    /* border: 1px solid red; */
+    padding: 10px;
+        border: 1px solid var(--color-font);
+        border-radius: 10px;
+            background-color: #fff;
+            margin: 10px 0;
 }
 
-.list {
-    width: 800px;
-    height: 40px;
-    background-color: #fff;
-    padding: 0.5rem 0.75rem;
-    border-radius: 10px;
-    margin: 0 15px;
-    border: 1px solid var(--color-font);
-    color: var(--color-font-second);
-    text-align: justify;
-}
-
-.btn {
+.btnRemove {
     background-color: var(--btn-remove);
     height: 40px;
-    width: 40px;
-    border-radius: 10px;
+        width: 40px;
+        border-radius: 20%;
     border: none;
-    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
 
-.btn:hover {
+.btnRemove:hover {
     background-color: #d45a5a;
-    transition: all .15s ease-in;
 }
 
 .BoxCheck {
+    background: none;
     border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
+    margin-right: 10px;
 }
 
-.infoBox {
-    width: 50%;
+#infoBox {
+    width: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    /* border: 1px solid red; */
     color: var(--color-title);
+    margin-top: 20px;
+        font-size: 0.9rem;
+    }
+    
+    .checked {
+        text-decoration: line-through;
+        color: var(--color-font-second);
+        font-weight: 500;
+        font-style: italic;
+        transition: all 0.3s ease-in-out;
 }
